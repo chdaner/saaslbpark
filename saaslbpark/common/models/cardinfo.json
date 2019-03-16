@@ -1,0 +1,49 @@
+{
+  "name": "cardinfo",
+  "plural": "cardinfo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "cardid": {
+      "type": "string",
+      "required": true
+    },
+    "cardtype": {
+      "type": {
+        "string": "string"
+      }
+    },
+    "cardtypeid": {
+      "type": "string"
+    },
+    "mainlicense": {
+      "type": "string"
+    },
+    "starttime": {
+      "type": "date"
+    },
+    "endtime": {
+      "type": "date"
+    },
+    "feetype": {
+      "type": "string"
+    },
+    "feetypeid": {
+      "type": "string"
+    },
+    "balance": {
+      "type": "number",
+      "default": 0
+    },
+    "pid": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

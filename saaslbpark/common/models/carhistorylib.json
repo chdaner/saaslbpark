@@ -1,0 +1,23 @@
+{
+  "name": "carhistorylib",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "license": {
+      "type": "string",
+      "required": true
+    },
+    "count": {
+      "type": "string",
+      "required": true,
+      "default": "1"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

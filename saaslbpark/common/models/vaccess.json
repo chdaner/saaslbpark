@@ -1,0 +1,97 @@
+{
+  "name": "vaccess",
+  "plural": "vaccesses",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "aid": {
+      "type": "string"
+    },
+    "vno": {
+      "type": "string"
+    },
+    "pid": {
+      "type": "string"
+    },
+    "entertime": {
+      "type": "string"
+    },
+    "entr": {
+      "type": "string"
+    },
+    "enterpic": {
+      "type": [
+        "string"
+      ]
+    },
+    "exittime": {
+      "type": "string"
+    },
+    "exit": {
+      "type": "string"
+    },
+    "exitpic": {
+      "type": [
+        "string"
+      ]
+    },
+    "operator": {
+      "type": "string"
+    },
+    "cardtypeid": {
+      "type": "string"
+    },
+    "cardtype": {
+      "type": "string"
+    },
+    "feetype": {
+      "type": "string"
+    },
+    "feetypeid": {
+      "type": "string"
+    },
+    "parkfee": {
+      "type": "number"
+    },
+    "olpayfee": {
+      "type": "number"
+    },
+    "actpayfee": {
+      "type": "number"
+    },
+    "payflag": {
+      "type": "number"
+    },
+    "syncstate": {
+      "type": "number"
+    },
+    "parkid": {
+      "type": "string"
+    },
+    "gtid": {
+      "type": "string"
+    },
+    "memberlevel": {
+      "type": "string"
+    },
+    "thirdflag": {
+      "type": "string"
+    },
+    "inremark": {
+      "type": "string"
+    },
+    "outremark": {
+      "type": "string"
+    },
+    "paytype": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

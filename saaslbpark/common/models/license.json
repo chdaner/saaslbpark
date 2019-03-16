@@ -1,0 +1,94 @@
+{
+  "name": "license",
+  "plural": "licenses",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "vno": {
+      "type": "string",
+      "required": true
+    },
+    "state": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "getList": {
+      "isStatic": true,
+      "accepts": [
+        {
+          "arg": "state",
+          "type": "string",
+          "required": true,
+          "description": "State of the license",
+          "http": {
+            "source": "path"
+          }
+        }
+      ],
+      "returns": [
+        {
+          "arg": "licenses",
+          "type": "array",
+          "root": true,
+          "description": ""
+        }
+      ],
+      "description": "Get a list of licenses",
+      "http": [
+        {
+          "path": "/:state",
+          "verb": "get"
+        }
+      ]
+    },
+    "getListEx": {
+      "isStatic": true,
+      "accepts": [
+        {
+          "arg": "state",
+          "type": "number",
+          "required": true,
+          "description": "",
+          "http": {
+            "source": "path"
+          }
+        }
+      ],
+      "returns": [
+        {
+          "arg": "licenses",
+          "type": "array",
+          "root": true,
+          "description": ""
+        }
+      ],
+      "description": "get list of license Ex",
+      "http": [
+        {
+          "path": "/:stateEx",
+          "verb": "get"
+        }
+      ]
+    },
+    "getListEx2": {
+      "isStatic": true,
+      "accepts": [],
+      "returns": [],
+      "description": "",
+      "http": [
+        {
+          "path": "/:stateEx2",
+          "verb": "get"
+        }
+      ]
+    }
+  }
+}

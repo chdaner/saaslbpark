@@ -1,0 +1,26 @@
+{
+  "name": "deviceinfo",
+  "plural": "deviceinfo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "devicetype": {
+      "type": "number"
+    },
+    "devicename": {
+      "type": "string",
+      "required": true
+    },
+    "roadtype": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

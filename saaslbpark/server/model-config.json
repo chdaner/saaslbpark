@@ -1,0 +1,74 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "license": {
+    "dataSource": "mongods",
+    "public": true
+  },
+  "vaccess": {
+    "dataSource": "mongods",
+    "public": true
+  },
+  "lbcarrest": {
+    "dataSource": "mongods",
+    "public": true
+  },
+  "car": {
+    "dataSource": "mongods",
+    "public": true
+  },
+  "deviceinfo": {
+    "dataSource": "mongods",
+    "public": true
+  },
+  "cardinfo": {
+    "dataSource": "mongods",
+    "public": true
+  },
+  "carinfo": {
+    "dataSource": "mongods",
+    "public": true
+  },
+  "carhistorylib": {
+    "dataSource": "mongods",
+    "public": true
+  },
+  "user": {
+    "dataSource": "mongods",
+    "public": true
+  }
+}

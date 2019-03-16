@@ -1,0 +1,27 @@
+{
+  "name": "carinfo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "carid": {
+      "type": "string"
+    },
+    "cardid": {
+      "type": "string"
+    },
+    "pid": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

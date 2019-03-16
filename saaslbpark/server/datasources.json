@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongods": {
+    "host": "127.0.0.1",
+    "port": 27017,
+    "url": "mongodb://127.0.0.1/lebo",
+    "database": "lebo",
+    "username": "",
+    "password": "",
+    "name": "mongods",
+    "connector": "mongodb"
+  }
+}
