@@ -1,2 +1,4 @@
 # saaslbpark
 a project of parking of saas platform
+
+实现线下岗亭无人职守的停车SaaS平台项目，后台服务采用node.js开发，框架基于loopback，mongodb做为数据持久化存储，redis缓存存储比对数据列表，通过socket进行web数据页面实时呈现的推送，线下硬件设备进行http接口调用以实时上传信息，获取后台回调后执行相应的操作指令
